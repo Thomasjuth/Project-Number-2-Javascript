@@ -9,11 +9,11 @@
 
 }
 
-body {background-color: white;}
+body {background-color: rgb(221, 100, 100);}
 
 header {
 
-   background: white;
+   background: rgb(221, 100, 100);
    padding: 20px;
 
 }
@@ -52,8 +52,8 @@ header > h1 {
 #user-label {
 
     position: absolute;
-    top: 30px;
-    left: -55px;
+    top: 0px;
+    left: -0px;
 
 
 }
@@ -61,11 +61,64 @@ header > h1 {
 #computer-label {
 
     position: absolute;
-    top: 30px;
-    left: 150px;
+    top:60px;
+    left: 110px;
 
 
 }
+
+#result {
+
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+
+.choices {
+
+
+    text-align: center;
+    margin: 50px 0px;
+
+}
+
+.choice {
+
+    border-radius: 50%;
+    display: inline-block;
+    padding:0px 4px;
+    transition: all 0,3s ease;
+   
+}
+
+.choice:hover {
+
+    cursor:pointer;
+    background: coral;
+
+}
+
+#make-move {
+
+    text-align: center;
+    margin-top: -20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+
+
+
 
 
 
