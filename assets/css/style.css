@@ -1,6 +1,28 @@
-body {
+* 
 
-    background-color: blue;
+{
+
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 
 
 }
+
+header {
+
+   background: white;
+
+}
+
+header > h1 {
+
+    color: black;
+    text-align: center;
+    
+}
+
+
+
+
