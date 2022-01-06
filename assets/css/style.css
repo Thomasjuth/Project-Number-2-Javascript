@@ -9,18 +9,21 @@
 
 }
 
-body {background-color: rgb(221, 100, 100);}
+body {
+    background-color: rgb(221, 100, 100);
+
+}
 
 header {
 
-   background: rgb(221, 100, 100);
+   background: rgb(243, 237, 237);
    padding: 20px;
 
 }
 
 header > h1 {
 
-    color: black;
+    color: rgb(221, 100, 100);
     text-align: center;
     
 }
@@ -28,22 +31,24 @@ header > h1 {
 
 .board {
 
-    margin:20px auto;
+    margin:30px auto;
     border: 3px solid black;
-    width: 200px;
+    width: 300px;
     color:black;
     font-size: 46px;
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;
-    position:relative
+    position:relative;
+    background-color: rgb(243, 237, 237);
 }
 
 .badge {
 
     background: lightblue;
     color:black;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: bold;
     padding: 2px 10px;
     font-family: Arial, sans-serif;
     
@@ -52,7 +57,7 @@ header > h1 {
 #user-label {
 
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     left: -0px;
 
 
@@ -61,8 +66,8 @@ header > h1 {
 #computer-label {
 
     position: absolute;
-    top:60px;
-    left: 110px;
+    bottom:0px;
+    right: 0px;
 
 
 }
@@ -70,6 +75,7 @@ header > h1 {
 #result {
 
     font-size: 20px;
+    display:none;
     color: black;
     text-align: center;
     font-weight: bold;
@@ -85,18 +91,20 @@ header > h1 {
 
     text-align: center;
     margin: 50px 0px;
-    background-color: transparent;
+   
+
 
 }
 
 .choice {
 
     border-radius: 50%;
-    display: inline-block;
-    padding:0px 4px;
-    transition: all 0,3s ease;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
     background-color: transparent;
-    size: 100px;
+   
    
 }
 
@@ -113,20 +121,177 @@ header > h1 {
     margin-top: -20px;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 1.1rem;
     font-weight: bold;
+    color: rgb(243, 237, 237);
     font-family: Arial, sans-serif;
+
+}
+
+/* IPAD */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+
+
+.board {
+
+    margin-top: 40px;
+
+}
+
+
+.choices {
+
+    padding-bottom: 2rem;
+
+
+}
+.choice {
+    
+    width:300px;
+    height: auto;
+    padding: 5px 0px;
+    text-align: center;
+    display: inline-block
+}
+
+
+#make-move {
+
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.board {
+
+    
+    margin:30px auto;
+    border: 3px solid black;
+    width: 300px;
+    color:black;
+    font-size: 60px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+    background-color: rgb(243, 237, 237);
+}
+
+
+}
+
+/* Small Screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+.choice {
+
+    padding: 50px 10px;
+    display: inline-block
+
+}
+
+.board {
+
+    
+        margin:30px auto;
+        border: 3px solid black;
+        width: 300px;
+        color:black;
+        font-size: 60px;
+        border-radius: 4px;
+        text-align: center;
+        padding: 15px 20px;
+        position:relative;
+        background-color: rgb(243, 237, 237);
+    }
+    
+
+
 
 }
 
 
 
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+.choice {
+    
+        padding: 80px 30px;
+        display: inline-block
+    }
+    }
+
+@media screen and (min-width: 1201px) {
 
 
+.board {
+
+    
+    margin:30px auto;
+    border: 3px solid black;
+    width: 500px;
+    color:black;
+    font-size: 60px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+    background-color: rgb(243, 237, 237);
+}
+
+    
 
 
+.choice {
+    
+        padding: 80px 50px;
+        display: inline-block;
+        
+    }
+
+.choices {
+
+    padding-top: 4rem;
+}
 
 
+#make-move {
+
+    font-size: 3rem;
+    padding-top: 5rem;
+    
+
+}
+
+#user-label {
+
+    position: absolute;
+    bottom: 0px;
+    left: -0px;
+    font-size: 1.5rem;
+
+
+}
+
+#computer-label {
+
+    position: absolute;
+    font-size: 1.5rem;
+    bottom:0px;
+    right: 0px;
+
+
+}
+
+header > h1 {
+
+    color: rgb(221, 100, 100);
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+}
 
 
 
