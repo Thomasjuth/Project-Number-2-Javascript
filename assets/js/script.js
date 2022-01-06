@@ -4,9 +4,9 @@ const scoreBoardDiv = document.querySelector(".board");
 const computerScoreSpan = document.getElementById("comp-score");
 const userScoreSpan = document.getElementById("player-score");
 const resultDiv = document.getElementById("result");
-const rockDiv = document.getElementById("r");
-const paperDiv = document.getElementById("p");
-const scissorsDiv = document.getElementById("s");
+const rockDiv = document.getElementById("rock");
+const paperDiv = document.getElementById("paper");
+const scissorsDiv = document.getElementById("scissors");
 
 
 
@@ -15,17 +15,17 @@ document.addEventListener("DOMContentLoaded", function main () {
 
 
         rockDiv.addEventListener('click', function() {
-            game("r");
+            game("rock");
         
         
         })
         scissorsDiv.addEventListener('click', function() {
-           game("s");
+           game("scissors");
         
         
         })
         paperDiv.addEventListener('click', function() {
-           game("p");
+           game("paper");
         
         
         })
