@@ -9,41 +9,50 @@ const paperDiv = document.getElementById("p");
 const scissorsDiv = document.getElementById("s");
 
 
-function main () {
 
-    rockDiv.addEventListener('click', function() {
-        window.alert("you, clicked rock");
-    
-    
-    })
-    scissorsDiv.addEventListener('click', function() {
-        window.alert("you, clicked scissors");
-    
-    
-    })
-    paperDiv.addEventListener('click', function() {
-        window.alert("you, clicked paper");
-    
-    
-    })
-    
-    }
+
+document.addEventListener("DOMContentLoaded", function main () {
+
+
+        rockDiv.addEventListener('click', function() {
+            game("r");
+        
+        
+        })
+        scissorsDiv.addEventListener('click', function() {
+           game("s");
+        
+        
+        })
+        paperDiv.addEventListener('click', function() {
+           game("p");
+        
+        
+        })
+
+})
+
+
+
+function game(userChoice) {
+
+    const computerChoice = getComputerChoice()
+    console.log(computerChoice);
+
+}
 
 function getComputerChoice() {
 
-const options = ["r", "s", "p"];
-const randomNumber = Math.floor(Math.random() * 3);
-return options[randomNumber];
+    const options = ["r", "s", "p"];
+    const randomNumber = Math.floor(Math.random() * 3);
+    return options[randomNumber];
+    
+    }
 
-}
 
 
-function userChoice(){
 
-const computerChoice = getComputerChoice()
-console.log(computerChoice);
 
-}
 
 
 
