@@ -11,12 +11,14 @@ const scissorsDiv = document.getElementById("scissors");
 
 
 
+
 document.addEventListener("DOMContentLoaded", function main () {
 
+    
 
         rockDiv.addEventListener('click', function() {
             game("rock");
-        
+            
         
         })
         scissorsDiv.addEventListener('click', function() {
@@ -48,6 +50,10 @@ function getComputerChoice() {
     return options[randomNumber];
     
     }
+
+
+    const audio = new Audio();
+    audio.src = "assets/audio/thesound.wav";
 
 
 
