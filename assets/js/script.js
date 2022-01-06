@@ -14,23 +14,22 @@ const scissorsDiv = document.getElementById("scissors");
 
 document.addEventListener("DOMContentLoaded", function main () {
 
-    
+        playChoices = document.querySelectorAll('div.choice');
+        playChoices.forEach(function (element) {
+            element.addEventListener('click', function() {
+                audio.play();
+                game(element.getAttribute('id'));
+            });
 
-        rockDiv.addEventListener('click', function() {
-            game("rock");
+        });
+
+
+        // rockDiv.addEventListener('click', function() {
+        //     audio.play();
+        //     game("rock");
             
         
-        })
-        scissorsDiv.addEventListener('click', function() {
-           game("scissors");
-        
-        
-        })
-        paperDiv.addEventListener('click', function() {
-           game("paper");
-        
-        
-        })
+    
 
 })
 
@@ -53,7 +52,7 @@ function getComputerChoice() {
 
 
     const audio = new Audio();
-    audio.src = "assets/audio/thesound.wav";
+    audio.src = "./assets/audio/thesound.wav";
 
 
 
