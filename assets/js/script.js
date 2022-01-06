@@ -4,9 +4,9 @@ const scoreBoardDiv = document.querySelector(".board");
 const computerScoreSpan = document.getElementById("comp-score");
 const userScoreSpan = document.getElementById("player-score");
 const resultDiv = document.getElementById("result");
-const rockDiv = document.getElementById("rock");
-const paperDiv = document.getElementById("paper");
-const scissorsDiv = document.getElementById("scissors");
+const rockDiv = document.getElementById("r");
+const paperDiv = document.getElementById("p");
+const scissorsDiv = document.getElementById("s");
 
 
 
@@ -22,13 +22,6 @@ document.addEventListener("DOMContentLoaded", function main () {
             });
 
         });
-
-
-        // rockDiv.addEventListener('click', function() {
-        //     audio.play();
-        //     game("rock");
-            
-        
     
 
 })
@@ -38,7 +31,46 @@ document.addEventListener("DOMContentLoaded", function main () {
 function game(userChoice) {
 
     const computerChoice = getComputerChoice()
-    console.log(computerChoice);
+        switch(userChoice + computerChoice) {
+            case "rs":
+            window.alert("Computer chose SCISSORS, you win this round!");
+            break;
+
+            case "rp":
+            window.alert("Computer chose PAPER, you win this round");
+            break;
+
+            case "rr":
+            window.alert("Computer chose ROCK, it's a draw");
+            break;
+
+            case "sr":
+            window.alert("Computer chose ROCK, one point to the computer!");
+            break;
+
+            case "sp":
+            window.alert("Computer chose PAPER, one point for you!");
+            break;
+
+            case "ss":
+            window.alert("Computer chose SCISSORS, it's a draw!");
+            break;
+
+            case "ps":
+            window.alert("Computer chose SCISSORS, you win this round");
+            break;
+
+            case "pp":
+            window.alert("Computer chose PAPER, it's a draw!");
+            break;
+
+            case "pr":
+            window.alert("Computer chose ROCK, one more point for you my friend!");
+            break;
+        }
+        
+    
+
 
 }
 
@@ -54,6 +86,8 @@ function getComputerChoice() {
     const audio = new Audio();
     audio.src = "./assets/audio/thesound.wav";
 
+
+    
 
 
 
