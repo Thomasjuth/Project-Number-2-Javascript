@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(221, 100, 100);
+    background-color: rgb(199, 81, 81);
 
 }
 
@@ -24,7 +24,7 @@ header {
 
 header > h1 {
 
-    color: rgb(221, 100, 100);
+    color: rgb(190, 68, 68);
     text-align: center;
     
 }
@@ -109,6 +109,8 @@ header > h1 {
    
 }
 
+
+
 .choice:hover {
 
     cursor:pointer;
@@ -187,8 +189,8 @@ header > h1 {
 
 .choice {
 
-    padding: 50px 10px;
-    display: inline-block
+    padding: 50px 50px;
+    display: inline-block;
 
 }
 
@@ -197,7 +199,7 @@ header > h1 {
     
         margin:30px auto;
         border: 3px solid black;
-        width: 300px;
+        width: 400px;
         color:black;
         font-size: 60px;
         border-radius: 4px;
@@ -209,7 +211,12 @@ header > h1 {
     
 
 
+    #make-move {
 
+        font-size: 2.3rem;
+        padding-top: 3rem;
+    }
+    
 }
 
 
@@ -218,10 +225,36 @@ header > h1 {
 
 .choice {
     
-        padding: 80px 30px;
+        padding: 80px 50px;
         display: inline-block
     }
-    }
+
+
+.board {
+
+
+    margin:30px auto;
+    border: 3px solid black;
+    width: 400px;
+    color:black;
+    font-size: 60px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+    background-color: rgb(243, 237, 237);
+}
+    
+
+
+#make-move {
+
+    font-size: 2.3rem;
+    padding-top: 3rem;
+}
+    
+}
+    
 
     /* Laptops */
 @media screen and (min-width: 1201px) and (max-width: 1999px) {
@@ -303,7 +336,7 @@ header > h1 {
 
     .choice {
 
-        padding: 10px 10px;
+        padding: 10px 30px;
         display: inline-block
     
     }
