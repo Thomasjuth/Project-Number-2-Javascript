@@ -11,6 +11,7 @@ const scissorsDiv = document.getElementById("s");
 
 
 
+/* waiting to load dom and for user choice/click */
 
 document.addEventListener("DOMContentLoaded", function main () {
 
@@ -24,56 +25,14 @@ document.addEventListener("DOMContentLoaded", function main () {
         });
     
 
-})
+});
 
 
-
-function game(userChoice) {
-
-    const computerChoice = getComputerChoice()
-        switch(userChoice + computerChoice) {
-            case "rs":
-            window.alert("Computer chose SCISSORS, you win this round!");
-            break;
-
-            case "rp":
-            window.alert("Computer chose PAPER, you win this round");
-            break;
-
-            case "rr":
-            window.alert("Computer chose ROCK, it's a draw");
-            break;
-
-            case "sr":
-            window.alert("Computer chose ROCK, one point to the computer!");
-            break;
-
-            case "sp":
-            window.alert("Computer chose PAPER, one point for you!");
-            break;
-
-            case "ss":
-            window.alert("Computer chose SCISSORS, it's a draw!");
-            break;
-
-            case "ps":
-            window.alert("Computer chose SCISSORS, you win this round");
-            break;
-
-            case "pp":
-            window.alert("Computer chose PAPER, it's a draw!");
-            break;
-
-            case "pr":
-            window.alert("Computer chose ROCK, one more point for you my friend!");
-            break;
-        }
-        
-    
+const audio = new Audio();
+audio.src = "./assets/audio/sound1.wav";
 
 
-}
-
+/* Generates random computer choice@ */
 function getComputerChoice() {
 
     const options = ["r", "s", "p"];
@@ -82,9 +41,80 @@ function getComputerChoice() {
     
     }
 
+/* Converts letter to word */
+function convertToWord (letter) {
 
-    const audio = new Audio();
-    audio.src = "./assets/audio/thesound.wav";
+    if (letter === "r") return "ROCK";
+    if (letter === "p") return "PAPER";
+    return "SCISSORS";    
+        
+}
+
+
+/* Gets excuted if user wins */
+
+function win(a, b) {
+    var userScore = "";
+    userScore++;
+    userScoreSpan.innerHTML = userScore; 
+    resultDiv.innerHTML = convertToWord(a) + " beats " + convertToWord(b);
+
+}
+
+
+/* Gets executed if user loses */
+function lose(a, b) {
+    var computerScore = "";
+    computerScore++;
+    computerScoreSpan.innerHTML = computerScore;
+    computerScore++;resultDiv.innerHTML = convertToWord(b) + " beats " + convertToWord(a);
+
+}
+
+/* Gets executed if a draw */
+function draw (user, computer) {
+
+    console.log("drawwww");
+    resultDiv.innerHTML = "It's a draw!";
+
+}
+
+
+
+
+
+/* MAIN GAME FUNCTION */
+function game(userChoice) {
+
+    const computerChoice = getComputerChoice()
+        switch(userChoice + computerChoice) {
+            case "rs":
+            case "pr":
+            case "sp":
+                win(userChoice, computerChoice);
+                break;
+
+            case "rp":
+            case "ps":
+            case "sr":
+                lose(userChoice, computerChoice);
+            break;
+
+            case "rr":
+            case "pp":
+            case "sp":
+                draw(userChoice, computerChoice);
+            break;
+
+
+
+            
+        }
+        
+
+}
+
+
 
 
     
