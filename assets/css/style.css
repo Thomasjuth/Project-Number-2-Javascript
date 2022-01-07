@@ -32,14 +32,14 @@ header > h1 {
 
 .board {
 
-    margin:30px auto;
+    margin:15px auto;
     border: 3px solid black;
     width: 300px;
     color:black;
     font-size: 46px;
     border-radius: 4px;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     position:relative;
     background-color: rgb(243, 237, 237);
 }
@@ -102,7 +102,7 @@ header > h1 {
     margin: auto;
     display: block;
     text-align: center;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 2px 0px;
     
    
    
@@ -340,13 +340,70 @@ header > h1 {
     
     }
 
-    #make-move {
 
-        font-size: 1rem;
-        padding: 0px 0px;
+
+
+    .board {
+
+    
+        margin:50px auto;
+        border: 3px solid black;
+        width: 700px;
+        height: 200px;
+        color:black;
+        font-size: 60px;
+        border-radius: 4px;
+        text-align: center;
+        padding: 15px 20px;
+        position:relative;
+        background-color: rgb(243, 237, 237);
+    }
+    
+        
+    
+    
+    
+    .choices {
+    
+        padding-top: 4rem;
+    }
+    
+    
+    #make-move {
+    
+        font-size: 3rem;
+        padding-top: 5rem;
+        
     
     }
-
+    
+    #user-label {
+    
+        position: absolute;
+        bottom: 0px;
+        left: -0px;
+        font-size: 2.5rem;
+    
+    
+    }
+    
+    #computer-label {
+    
+        position: absolute;
+        font-size: 2.5rem;
+        bottom:0px;
+        right: 0px;
+    
+    
+    }
+    
+    header > h1 {
+    
+        color: rgb(221, 100, 100);
+        font-size: 3rem;
+        text-align: center;
+        
+    }
 }
 
 

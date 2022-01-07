@@ -57,7 +57,7 @@ function win(a, b) {
     var userScore = "";
     userScore++;
     userScoreSpan.innerHTML = userScore; 
-    resultDiv.innerHTML = convertToWord(a) + " beats " + convertToWord(b);
+    resultDiv.innerHTML = "Computer chose " + convertToWord(b) + ", " + "You Win!";
 
 }
 
@@ -67,8 +67,7 @@ function lose(a, b) {
     var computerScore = "";
     computerScore++;
     computerScoreSpan.innerHTML = computerScore;
-    computerScore++;resultDiv.innerHTML = convertToWord(b) + " beats " + convertToWord(a);
-
+    computerScore++;resultDiv.innerHTML = "Computer chose " + convertToWord(b) + ", " + " You lose!";
 }
 
 /* Gets executed if a draw */
