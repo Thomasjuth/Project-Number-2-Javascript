@@ -33,14 +33,14 @@ header > h1 {
 
 .board {
 
-    margin:5px auto;
+    margin:10px auto;
     border: 3px solid black;
-    width: 300px;
+    width: 250px;
     color:black;
     font-size: 30px;
     border-radius: 4px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position:relative;
     background-color: rgb(243, 237, 237);
 }
@@ -49,7 +49,7 @@ header > h1 {
 
     background: lightblue;
     color:black;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
     padding: 2px 10px;
     font-family: Arial, sans-serif;
@@ -77,12 +77,14 @@ header > h1 {
 #result {
 
     font-size: 15px;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    margin-top: 22px;
     padding-bottom: 20px;
+    height:50px;
 
 }
 
@@ -93,7 +95,7 @@ header > h1 {
 
     margin-top: -20px;
     text-align: center;
-    margin: 20px 0px;
+    margin: 0px 0px;
    
 
 
@@ -106,44 +108,91 @@ header > h1 {
     display: block;
     text-align: center;
     padding: 0px 0px 0px 0px;
-    
+}
+
+.choice img {
+
+    width:100px;
+    height: 100px;
+    margin-bottom: 20px;
+
 
 }
 
 
 
-.choice:hover {
+.choice img:hover {
 
     cursor:pointer;
+    border-radius: 50%;
+    background-size: 100px;
     background: lightblue;
    
 
 }
 
-#make-move {
-    
-    text-align: center;
-    margin-top: -20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.0rem;
+
+#mute {
+
+    background-color: white;
+    color: black;
     font-weight: bold;
-    color: rgb(243, 237, 237);
-    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
 
 }
+
+#instruct {
+
+    background-color: white;
+    padding: 10px, 10px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 90px;
+    height: 35px;
+
+    
+
+}
+
+
+
+
+
 
 /* IPAD */
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
 
+#mute {
 
-.board {
-
-    margin-top: 40px;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+   
 
 }
 
+.badge {
+
+    font-size: 1rem;
+}
+
+
+header > h1 {
+
+    color: rgb(190, 68, 68);
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
 
 .choices {
 
@@ -161,12 +210,13 @@ header > h1 {
     display: inline-block;
 }
 
+.choice img {
 
-#make-move {
+    height: 150px;
+    width: 150px;
 
-    font-size: 2rem;
-    padding-top: 2rem;
 }
+
 
 .board {
 
@@ -183,17 +233,38 @@ header > h1 {
     background-color: rgb(243, 237, 237);
 }
 
+#result {
+
+    font-size: 2rem;
+}
 
 }
 
 /* Small Screens */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 999px) {
 
 .choice {
 
     padding: 50px 50px;
     display: inline-block;
 
+}
+
+header h1 {
+
+    font-size: 2rem;
+}
+
+#result {
+
+    font-size: 2rem;
+
+}
+
+
+.badge {
+
+    font-size: 1rem;
 }
 
 .board {
@@ -210,27 +281,65 @@ header > h1 {
         position:relative;
         background-color: rgb(243, 237, 237);
     }
+
+.choice img {
+
+    width: 200px;
+    height: 200px;
+}
+
+#mute {
+
+width: 200px;
+height: 60px;
+}
     
 
 
-    #make-move {
 
-        font-size: 2.3rem;
-        padding-top: 3rem;
-    }
-    
 }
 
 
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
 
 .choice {
     
         padding: 80px 50px;
-        display: inline-block
+        display: block
     }
+.choice img {
 
+
+    width: 300px;
+    height: 300px;
+}
+
+header h1 {
+
+    font-size: 3rem;
+
+
+}
+
+
+.badge {
+
+    font-size: 1.5rem;
+}
+
+#mute {
+
+    width: 200px;
+    height: 60px;
+    font-size: 2rem;
+    }
+        
+
+#result {
+    margin-top: 20px;
+    font-size: 2.4rem;
+}
 
 .board {
 
@@ -249,164 +358,66 @@ header > h1 {
     
 
 
-#make-move {
-
-    font-size: 2.3rem;
-    padding-top: 3rem;
 }
     
-}
-    
-
     /* Laptops */
 @media screen and (min-width: 1201px) and (max-width: 1999px) {
 
 
-.board {
-
-    
-    margin:30px auto;
-    border: 3px solid black;
-    width: 500px;
-    color:black;
-    font-size: 60px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 15px 20px;
-    position:relative;
-    background-color: rgb(243, 237, 237);
-}
-
-    
-
-
 .choice {
     
-        padding: 40px 50px;
-        display: inline-block;
-        
-    }
+    padding: 80px 50px;
+    display: inline-block
+}
+.choice img {
 
-.choices {
 
-    padding-top: 4rem;
+width: 250px;
+height: 250px;
 }
 
+header h1 {
 
-#make-move {
-
-    font-size: 2.4rem;
-    padding-top: 5rem;
-    
-
-}
-
-#user-label {
-
-    position: absolute;
-    bottom: 0px;
-    left: -0px;
-    font-size: 1.5rem;
+font-size: 3rem;
 
 
 }
 
-#computer-label {
 
-    position: absolute;
-    font-size: 1.5rem;
-    bottom:0px;
-    right: 0px;
+.badge {
 
+font-size: 1.5rem;
+}
+
+#mute {
+
+width: 200px;
+height: 60px;
+font-size: 2rem;
+}
+    
+
+#result {
+margin-top: 20px;
+font-size: 2.4rem;
+}
+
+.board {
+
+
+margin:30px auto;
+border: 3px solid black;
+width: 400px;
+color:black;
+font-size: 60px;
+border-radius: 4px;
+text-align: center;
+padding: 15px 20px;
+position:relative;
+background-color: rgb(243, 237, 237);
+}
 
 }
 
-header > h1 {
-
-    color: rgb(221, 100, 100);
-    font-size: 3rem;
-    text-align: center;
-    
-}
-
-}
-
-
-    /* Large Laptops */
-
-@media screen and (min-width: 2000px) {
-
-    .choice {
-
-        padding: 10px 30px;
-        display: inline-block
-    
-    }
-
-
-
-
-    .board {
-
-    
-        margin:50px auto;
-        border: 3px solid black;
-        width: 700px;
-        height: 200px;
-        color:black;
-        font-size: 60px;
-        border-radius: 4px;
-        text-align: center;
-        padding: 15px 20px;
-        position:relative;
-        background-color: rgb(243, 237, 237);
-    }
-    
-        
-    
-    
-    
-    .choices {
-    
-        padding-top: 4rem;
-    }
-    
-    
-    #make-move {
-    
-        font-size: 3rem;
-        padding-top: 5rem;
-        
-    
-    }
-    
-    #user-label {
-    
-        position: absolute;
-        bottom: 0px;
-        left: -0px;
-        font-size: 2.5rem;
-    
-    
-    }
-    
-    #computer-label {
-    
-        position: absolute;
-        font-size: 2.5rem;
-        bottom:0px;
-        right: 0px;
-    
-    
-    }
-    
-    header > h1 {
-    
-        color: rgb(221, 100, 100);
-        font-size: 3rem;
-        text-align: center;
-        
-    }
-}
 
 
