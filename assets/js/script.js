@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function main () {
 
         instructButton.addEventListener ('click', function(){
 
-            alert('Click on your choice to make a move. First to 10 points wins the game! Press "mute" button to turn off the audio.');
+            alert('Click on your choice to make a move. Whoever gets to five points first wins the game! Press "mute" button to turn off the audio.');
         });
     
 
@@ -47,8 +47,10 @@ function playAudio () {
         audio.play(); }
 }
 
+
 const audio = new Audio();
 audio.src = "./assets/audio/sound1.wav";
+
 
 
 
@@ -76,7 +78,7 @@ function convertToWord (letter) {
 
 function win(a, b) {
     userScore++;
-    if (userScore === 10) {
+    if (userScore === 5) {
         userScore = 0;
         computerScore = 0;
         alert("CONGRATULATIONS, YOU WON! :D")
@@ -91,7 +93,7 @@ function win(a, b) {
 /* Gets executed if user loses */
 function lose(a, b) {
     computerScore++;
-    if (computerScore === 10) {
+    if (computerScore === 5) {
         computerScore = 0;
         userScore = 0;
         alert("COMPUTER IS THE WINNER!")
