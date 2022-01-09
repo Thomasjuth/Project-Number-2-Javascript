@@ -1,8 +1,10 @@
 View the live project here: https://thomasjuth.github.io/Project-Number-2-Javascript/
 
+
 <h1 align="center">Rock, Paper & Scissors</h1>
 
 
+<h2 align="center"><img src="./assets/images/responsive.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -15,6 +17,8 @@ View the live project here: https://thomasjuth.github.io/Project-Number-2-Javasc
         3. I want to be able to mute the sound. 
         4. I want to be able to play against the computer.
         5. I want to be entertained by the simplicity of the game and its quirky design.
+        6. I want to be able to play the game on both mobile phone and computer.
+        
 
     -   
 
@@ -24,7 +28,7 @@ View the live project here: https://thomasjuth.github.io/Project-Number-2-Javasc
     -   #### Typography
         -   The Arial font is the main font used, as it suited the colors and the design really well. It is also clean and simple.
     -   #### Imagery
-        -   Imagery is important. I chose funny and quirky looking chracters, rather than the usual rock, paper and scissor hand. As soon as I found these, I knew they were perfect for the vibe I was going for. The aim is to put a smile on the face of the user.
+        -   Getting the right imagary was important and took a lot of searching. I wanted to create a funny and quirky game with funny looking chracters, rather than the usual approach. As soon as I found these, I knew they were perfect for the vibe I was going for. The aim is to put a smile on the face of the user.
 
          #### Sound
         -   I chose a sound that should remind the user of classic 8bit audio games. 
@@ -37,7 +41,7 @@ View the live project here: https://thomasjuth.github.io/Project-Number-2-Javasc
 
 ## Features
 
--   Responsive on all device sizes
+-   Responsive on all device sizes and built for mobile phone first.
 
 -   Interactive elements
 
@@ -80,7 +84,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
-    The hotizontal position of the Text Area Field in the Comments section is slightly off, but somehow it is not behaving as instructed. 
 
 ### GitHub Pages
 
