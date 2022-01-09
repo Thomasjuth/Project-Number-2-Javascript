@@ -31,6 +31,8 @@ header > h1 {
 }
 
 
+
+
 .board {
 
     margin:10px auto;
@@ -84,7 +86,7 @@ header > h1 {
     margin-bottom: 16px;
     margin-top: 22px;
     padding-bottom: 20px;
-    height:50px;
+    height:70px;
 
 }
 
@@ -131,31 +133,46 @@ header > h1 {
 
 }
 
+.buttons {
+
+    width:300px;
+    height: 300px;
+    padding: 20px 20px;
+
+}
+
 
 #mute {
 
     background-color: white;
     color: black;
+    padding: 5px 10px;
     font-weight: bold;
+    font-size: 12px;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 80px;
+    bottom: 5px;
+    left: 5px;
+    width: 100px;
     height: 35px;
+   
+  
+    
 
 }
 
 #instruct {
 
     background-color: white;
-    padding: 10px, 10px;
+    padding: 10px 10px;
     color: black;
     font-weight: bold;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
     width: 90px;
     height: 35px;
+   
 
     
 
@@ -170,16 +187,41 @@ header > h1 {
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
 
-#mute {
+    #mute {
 
-    bottom: 0px;
-    left: 0px;
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-   
-
-}
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 12px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 100px;
+        height: 35px;
+       
+      
+        
+    
+    }
+    
+    #instruct {
+    
+        background-color: white;
+        padding: 10px 10px;
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 12px;
+        width: 90px;
+        height: 35px;
+       
+    
+        
+    
+    }
 
 .badge {
 
@@ -237,9 +279,12 @@ header > h1 {
 #result {
 
     font-size: 2rem;
+    height: 130px;
 }
 
 }
+
+
 
 /* Small Screens */
 @media screen and (min-width: 769px) and (max-width: 999px) {
@@ -259,6 +304,7 @@ header h1 {
 #result {
 
     font-size: 2rem;
+    height: 200px;
 
 }
 
@@ -289,13 +335,50 @@ header h1 {
     height: 200px;
 }
 
+.buttons {
+
+    width:300px;
+    height: 300px;
+    padding: 20px 20px;
+
+}
+
+
 #mute {
 
-width: 200px;
-height: 60px;
-}
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+   
+  
     
 
+}
+
+#instruct {
+
+    background-color: white;
+    padding: 10px 10px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+    width: 120px;
+    height: 100px;
+   
+
+    
+
+}
 
 
 }
@@ -307,7 +390,7 @@ height: 60px;
 .choice {
     
         padding: 80px 50px;
-        display: block
+        display: inline-block;
     }
 .choice img {
 
@@ -331,15 +414,45 @@ header h1 {
 
 #mute {
 
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
     width: 200px;
-    height: 60px;
-    font-size: 2rem;
-    }
+    height: 35px;
+   
+  
+    
+
+}
+
+#instruct {
+
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+   
+
+    
+
+}
         
 
 #result {
     margin-top: 20px;
     font-size: 2.4rem;
+    height: 150px;
 }
 
 .board {
@@ -392,15 +505,44 @@ font-size: 1.5rem;
 
 #mute {
 
-width: 200px;
-height: 60px;
-font-size: 2rem;
-}
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 200px;
+    height: 35px;
+   
+  
     
+
+}
+
+#instruct {
+
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+   
+
+    
+
+}
 
 #result {
 margin-top: 20px;
 font-size: 2.4rem;
+height:200px;
 }
 
 .board {
@@ -421,4 +563,92 @@ background-color: rgb(243, 237, 237);
 }
 
 
+/* Large SCREENS */
+@media screen and (min-width: 2000px)  {
 
+
+    .choice {
+    
+        padding: 80px 50px;
+        display: inline-block
+    }
+    .choice img {
+    
+    
+    width: 250px;
+    height: 250px;
+    }
+    
+    header h1 {
+    
+    font-size: 3rem;
+    
+    
+    }
+    
+    
+    .badge {
+    
+    font-size: 1.5rem;
+    }
+
+    
+    
+    #mute {
+
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 200px;
+        height: 35px;
+       
+      
+        
+    
+    }
+    
+    #instruct {
+    
+        background-color: white;
+        padding: 5px 10px;
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 18px;
+        width: 200px;
+        height: 35px;
+       
+    
+        
+    
+    }
+    
+    #result {
+    margin-top: 20px;
+    font-size: 2.4rem;
+    height: 200px;
+    }
+    
+    .board {
+    
+    
+    margin:30px auto;
+    border: 3px solid black;
+    width: 400px;
+    color:black;
+    font-size: 60px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    position:relative;
+    background-color: rgb(243, 237, 237);
+    }
+    
+    }
